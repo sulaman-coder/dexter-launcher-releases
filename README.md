@@ -1,26 +1,29 @@
-# Dexter Client releases
+# Dexter Client
 
-Windows downloads and updates for **Dexter Client** and **Dexter Client Launcher**.
+Dexter Client is an independently maintained Minecraft Java launcher and client focused on performance and quality-of-life features. It is not an official Minecraft product and is not affiliated with Mojang Studios or Microsoft.
 
-## Install
+## Download
 
-Open the [Releases page](https://github.com/sulaman-coder/dexter-launcher-releases/releases) and choose a normal stable release. Download the Windows x64 installer for an installed application, or the portable ZIP for manual extraction. Keep the complete portable folder. Java and JavaFX are included.
+[Dexter Client 1.4.3](https://github.com/sulaman-coder/dexter-launcher-releases/releases/tag/v1.4.3) is the current Windows x64 premium-only AppID review candidate. Choose the installer for an installed application, or extract the complete portable ZIP. Java 25 and JavaFX are included. Seven matching client JARs, checksums and validation information accompany the release.
 
-Public releases contain binaries, required license notices, checksums and validation information. Dexter implementation source and fork patches are maintained privately and are not uploaded to this repository. Private addons and optional backend services are not included.
+**Minecraft Services access is pending.** Earlier authorized sign-ins completed Microsoft OAuth, Xbox Live and XSTS, then Minecraft Services returned HTTP 403. The dedicated Microsoft window has been tested for page loading and cancellation. Full premium login, live ownership/profile validation and token refresh are not yet verified. An approval request is not an approval grant; publisher verification is a separate process.
 
-## Microsoft and offline accounts
+## Accounts and gameplay
 
-Username-only offline accounts support local testing. Microsoft login uses Dexter's registered public application. Read the selected release's Microsoft validation status before relying on premium login: registering an application alone does not guarantee Minecraft Services access.
+The current public build requires a Microsoft account and verified Minecraft Java ownership before gameplay, including on servers that do not authenticate players. It does not offer username-only offline gameplay. Historical offline testing is kept separately and privately, without the reviewed public application ID.
+
+Sign-in opens Microsoft's own HTTPS pages in a dedicated application window using authorization-code PKCE, rather than the previous device-code prompt. Credentials belong on Microsoft's page. The launcher uses Dexter's own registered public application; no borrowed launcher application ID or client secret is shipped.
 
 ## Updates
 
-The configured Dexter Client distribution checks this repository. A normal stable release includes the native installer and all seven matching client JARs with GitHub SHA-256 asset digests. Installed applications can download verified updates and offer Restart to update. Portable applications should be replaced manually.
+Installed Dexter applications check this repository and can download verified updates and offer Update & restart. Stable releases use version tags such as v1.4.3 and include GitHub SHA-256 asset digests. Portable applications are replaced manually. Draft, prerelease and updatetest- releases are excluded from the stable channel.
 
-Older local client builds without this repository configured need a one-time installation of the configured distribution. Draft, prerelease and `updatetest-` releases are not offered to stable users. Earlier preview launchers in the repository are historical releases; they are not proof of compatibility with this client.
+Read each release's VALIDATION.md for the observed download, installation and relaunch results. Historical results do not prove a newer release's installation. Old preview launchers are historical projects and are not proof of compatibility with this client.
 
-Each release's VALIDATION.md lists the observed update detection, download, installation and relaunch results.
+## Distribution and support
 
-Product branding uses Dexter. Original copyright, license and third-party notices are retained in the distributed files. No user accounts, game worlds, tokens or private signing material belong in this repository.
+This repository distributes binaries, required license notices, checksums, user instructions and compact validation information. Dexter implementation source and fork patches are maintained privately and are not uploaded here. Original and third-party components retain their existing copyrights and licenses; required notices remain included.
 
-Dexter Client is not an official Minecraft product and is not affiliated with Mojang Studios or Microsoft.
+Optional backend services and private addons are not included or configured. No live store, paid membership, social service or Discord reward is claimed. No user accounts, worlds, tokens, private test tools or signing material belong in this repository.
 
+Community and support: [Dexter Discord](https://discord.gg/dexterai).
