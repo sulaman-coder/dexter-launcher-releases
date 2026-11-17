@@ -6,7 +6,7 @@ Windows downloads and updates for **Dexter Client** and **Dexter Client Launcher
 
 Open the [Releases page](https://github.com/sulaman-coder/dexter-launcher-releases/releases) and choose a normal stable release. Download the Windows x64 installer for an installed application, or the portable ZIP for manual extraction. Keep the complete portable folder. Java and JavaFX are included.
 
-The source archive, build guide, checksums and validation report accompany each release. Private addons and optional backend services are not included.
+Public releases contain binaries, required license notices, checksums and validation information. Dexter implementation source and fork patches are maintained privately and are not uploaded to this repository. Private addons and optional backend services are not included.
 
 ## Microsoft and offline accounts
 
