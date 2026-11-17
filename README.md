@@ -1,15 +1,26 @@
-# Dexter Launcher releases
+# Dexter Client releases
 
-This public repository hosts release assets and update metadata for Dexter Launcher for Windows x64. Application source, private signing material, user accounts and game worlds do not belong in this repository.
+Windows downloads and updates for **Dexter Client** and **Dexter Client Launcher**.
 
-## Current status
+## Install
 
-The release repository has been created. No application release has been published yet. Live in-app updates remain disabled until release signing is configured and a real installed A-to-B update test passes.
+Open the [Releases page](https://github.com/sulaman-coder/dexter-launcher-releases/releases) and choose a normal stable release. Download the Windows x64 installer for an installed application, or the portable ZIP for manual extraction. Keep the complete portable folder. Java and JavaFX are included.
 
-## Installation and future updates
+The source archive, build guide, checksums and validation report accompany each release. Private addons and optional backend services are not included.
 
-The first configured updater-enabled Windows release requires a one-time installer. Subsequent installed releases will offer Check for updates, Download and Restart to update inside Dexter. Portable ZIP copies do not replace themselves.
+## Microsoft and offline accounts
 
-Stable and Beta releases will be identified separately. Do not treat an unsigned development build or a controlled UI demonstration as a verified production update.
+Username-only offline accounts support local testing. Microsoft login uses Dexter's registered public application. Read the selected release's Microsoft validation status before relying on premium login: registering an application alone does not guarantee Minecraft Services access.
 
-Dexter Launcher is not an official Minecraft product and is not affiliated with Mojang Studios or Microsoft.
+## Updates
+
+The configured Dexter Client distribution checks this repository. A normal stable release includes the native installer and all seven matching client JARs with GitHub SHA-256 asset digests. Installed applications can download verified updates and offer Restart to update. Portable applications should be replaced manually.
+
+Older local client builds without this repository configured need a one-time installation of the configured distribution. Draft, prerelease and `updatetest-` releases are not offered to stable users. Earlier preview launchers in the repository are historical releases; they are not proof of compatibility with this client.
+
+Each release's VALIDATION.md lists the observed update detection, download, installation and relaunch results.
+
+Product branding uses Dexter. Original copyright, license and third-party notices are retained in the distributed files. No user accounts, game worlds, tokens or private signing material belong in this repository.
+
+Dexter Client is not an official Minecraft product and is not affiliated with Mojang Studios or Microsoft.
+
