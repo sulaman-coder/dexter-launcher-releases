@@ -4,26 +4,28 @@ Dexter Client is an independently maintained Minecraft Java launcher and client 
 
 ## Download
 
-[Dexter Client 1.4.3](https://github.com/sulaman-coder/dexter-launcher-releases/releases/tag/v1.4.3) is the current Windows x64 premium-only AppID review candidate. Choose the installer for an installed application, or extract the complete portable ZIP. Java 25 and JavaFX are included. Seven matching client JARs, checksums and validation information accompany the release.
+[Dexter Client 1.4.4](https://github.com/sulaman-coder/dexter-launcher-releases/releases/tag/v1.4.4) is the current Windows x64 release. Choose the installer, or extract the complete portable ZIP. Java 25 and JavaFX are included. Seven matching client JARs, checksums, required notices and validation information accompany the release.
 
-**Minecraft Services access is pending.** Earlier authorized sign-ins completed Microsoft OAuth, Xbox Live and XSTS, then Minecraft Services returned HTTP 403. The dedicated Microsoft window has been tested for page loading and cancellation. Full premium login, live ownership/profile validation and token refresh are not yet verified. An approval request is not an approval grant; publisher verification is a separate process.
+## Accounts
 
-## Accounts and gameplay
+Open the account menu → Add account, then choose **Microsoft account** or **Offline account**. Offline accounts use a saved username for single-player and servers configured to accept offline identities. They do not grant premium access or work on servers requiring authenticated identities. Username-only failures do not bypass Microsoft account verification.
 
-The current public build requires a Microsoft account and verified Minecraft Java ownership before gameplay, including on servers that do not authenticate players. It does not offer username-only offline gameplay. Historical offline testing is kept separately and privately, without the reviewed public application ID.
+Microsoft sign-in opens Microsoft's genuine HTTPS form in a dedicated window using authorization-code PKCE, with the custom Minecraft background. No device-code prompt or client secret is shipped. Dexter uses its own registered public application ID. Close the window with X to cancel.
 
-Sign-in opens Microsoft's own HTTPS pages in a dedicated application window using authorization-code PKCE, rather than the previous device-code prompt. Credentials belong on Microsoft's page. The launcher uses Dexter's own registered public application; no borrowed launcher application ID or client secret is shipped.
+**Minecraft Services access is unconfirmed.** Earlier authorized sign-ins completed Microsoft OAuth, Xbox Live and XSTS, then Minecraft Services returned HTTP 403. Full premium ownership/profile retrieval, refresh and authenticated gameplay remain unverified. Loading and closing the sign-in page is not a completed login. Publisher verification is a separate process.
+
+The earlier AppID application described a premium-only public candidate. This release adds public offline accounts at the owner's request. It does not satisfy the review form's ownership-before-all-gameplay requirement, and no approval covering this changed scope is claimed.
 
 ## Updates
 
-Installed Dexter applications check this repository and can download verified updates and offer Update & restart. Stable releases use version tags such as v1.4.3 and include GitHub SHA-256 asset digests. Portable applications are replaced manually. Draft, prerelease and updatetest- releases are excluded from the stable channel.
+Installed Dexter applications check this repository for stable releases, download assets verified against GitHub SHA-256 digests, and offer Update & restart. Profiles receive their updated matching client on the next launch. Portable copies are replaced manually. Drafts, prereleases and update-test releases are excluded from the stable channel.
 
-Read each release's VALIDATION.md for the observed download, installation and relaunch results. Historical results do not prove a newer release's installation. Old preview launchers are historical projects and are not proof of compatibility with this client.
+Read each release's VALIDATION.md and validation ZIP for its actual checks and limitations. Historical update results do not establish that a newer version installed successfully.
 
 ## Distribution and support
 
-This repository distributes binaries, required license notices, checksums, user instructions and compact validation information. Dexter implementation source and fork patches are maintained privately and are not uploaded here. Original and third-party components retain their existing copyrights and licenses; required notices remain included.
+This repository contains distribution information and releases with binaries, notices, checksums and compact validation. Implementation source and patches remain private. Repository separation and an installer-only download layout remain deferred. Third-party font/library notices are included with the packages.
 
-Optional backend services and private addons are not included or configured. No live store, paid membership, social service or Discord reward is claimed. No user accounts, worlds, tokens, private test tools or signing material belong in this repository.
+Optional backend services and private addons are not deployed or configured. No live store, paid membership, social service or Discord reward is claimed. Accounts, worlds, tokens, private testing tools and signing material are not release assets.
 
 Community and support: [Dexter Discord](https://discord.gg/dexterai).
