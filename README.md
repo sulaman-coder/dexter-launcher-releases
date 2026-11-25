@@ -1,12 +1,12 @@
 # Dexter Client â€” Windows downloads
 
-[Download Dexter Client 2.0.1 for Windows x64](https://github.com/sulaman-coder/dexter-launcher-releases/releases/download/v2.0.1/dexter-client-launcher-2.0.1-windows-x64.exe)
+[Download Dexter Client 2.0.2 for Windows x64](https://github.com/sulaman-coder/dexter-launcher-releases/releases/download/v2.0.2/dexter-client-launcher-2.0.2-windows-x64.exe)
 
 This public repository distributes the Windows installer. Dexter application source is kept in a separate private repository.
 
-Version 2.0.1 fixes automatic detection of Mojang’s Windows Java runtime. The 2.0 launcher includes the Rust/Electron launcher, Modern and Minecrafty themes, direct Microsoft sign-in in a compact window, refreshed in-game menus and the restored Doctor. Minecraft ownership is verified for premium sessions. An offline account option is also available.
+Version 2.0.2 connects the GitHub update checker and uses a native Windows Microsoft sign-in window. It also includes detected RAM/display limits, per-profile renderer selection, Events Coming Soon, matching rounded Windows 11 corners and the managed-Java detection fix. Install this version once manually if you have 2.0.0 or 2.0.1; their update buttons were not connected. The 2.0 launcher includes the Rust/Electron launcher, Modern and Minecrafty themes, direct Microsoft sign-in in a compact window, refreshed in-game menus and the restored Doctor. Minecraft ownership is verified for premium sessions. An offline account option is also available.
 
-[Release notes and verification limits](https://github.com/sulaman-coder/dexter-launcher-releases/releases/tag/v2.0.1) Â· [Dexter Discord](https://discord.gg/dexterai)
+[Release notes and verification limits](https://github.com/sulaman-coder/dexter-launcher-releases/releases/tag/v2.0.2) Â· [Dexter Discord](https://discord.gg/dexterai)
 
 Close Dexter before installing. This is an unsigned Windows x64 build; Windows may ask for approval. Existing account and world folders are separate from the installed application. Back up important worlds.
 
